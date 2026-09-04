@@ -306,6 +306,6 @@ windows-server-sql-lab/
 
 ---
 
-**Ruba Aljuhani**
+**Ruba Aljuhani 👩🏻‍💻**
 
 Computer Science
