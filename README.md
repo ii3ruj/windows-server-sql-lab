@@ -182,14 +182,15 @@ Backup directory: C:\SQLBackups
 
 ![SSMS Connection](Server/13-ssms.png)
 
-> ⚠️ **Troubleshooting Note (Error 40 Resolution):**  
-> Initial connection returned `Cannot connect to First-Server (Error: 40 - Could not open a connection to SQL Server)`.  
-> * **Root Cause:** The database engine service (`MSSQLSERVER`) had not transitioned to the running state following system initialization.  
+> [!WARNING]
+> **Troubleshooting Note (Error 40 Resolution):**  
+> Initial connection returned `Cannot connect to First-Server (Error: 40 - Could not open a connection to SQL Server)`.
+> * **Root Cause:** The database engine service (`MSSQLSERVER`) had not transitioned to the running state following system initialization.
 > * **Resolution:** Opened `services.msc`, verified and started the `SQL Server (MSSQLSERVER)` service, and confirmed connectivity using `.` / `localhost`.
 
 * Executed the consolidated administrative script (individual modular scripts are also available in the `sql/` directory):
 
-![SSMS Connection](Server/13-ssms.png)
+
 
 ```sql
 /* ==============================================================================
